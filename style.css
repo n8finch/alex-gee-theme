@@ -1194,7 +1194,7 @@ img.alignright,
 /* # Site Header
 ---------------------------------------------------------------------------------------------------- */
 .site-header {
-  background-color: blue;
+  background-color: #fff;
 }
 
 .site-header > .wrap {
