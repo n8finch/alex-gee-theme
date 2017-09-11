@@ -1,10 +1,15 @@
 /* ## Entries
 --------------------------------------------- */
 
+body.home .post-featured-image {
+    float: right;
+}
+
+
 .entry {
 	background-color: #fff;
 	margin-bottom: 40px;
-	padding: 70px 80px;
+	padding: 30px 40px;
 }
 
 .entry-content ol,

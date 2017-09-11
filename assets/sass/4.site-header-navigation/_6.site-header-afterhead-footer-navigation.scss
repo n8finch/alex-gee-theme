@@ -9,8 +9,12 @@
 --------------------------------------------- */
 
 .nav-primary {
-	background-color: #fff;
-	border-top: 1px solid #eee;
+	background-color: $color__dark_blue;
+	color: white;
+
+	.genesis-nav-menu a:hover {
+		background-color: $color__dark_blue_hover;
+	}
 }
 
 /* ## Footer Navigation

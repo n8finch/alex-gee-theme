@@ -4,10 +4,37 @@
 .sidebar {
 	font-size: 16px;
 	font-size: 1.6rem;
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 }
 
 .sidebar .widget {
 	background-color: #fff;
-	padding: 40px;
+	padding: 0;
+}
+
+
+.sidebar .widget.enews-widget {
+    background-color: $color__dark_blue;
+    padding: 20px;
+}
+
+
+.simple-social-icons ul li.ssi-facebook a {
+	background-color: #205098 !important;
+}
+
+.simple-social-icons ul li.ssi-twitter a {
+	background-color: #15A7E0 !important;
+}
+
+.simple-social-icons ul li.ssi-instagram a {
+	background-color: #F24375 !important;
+}
+
+.simple-social-icons ul li.ssi-youtube a {
+	background-color: #DF3D26 !important;
+}
+
+.simple-social-icons ul li.ssi-linkedin a {
+	background-color: #0077B5 !important;
 }

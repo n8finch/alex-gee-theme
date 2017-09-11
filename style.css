@@ -103,9 +103,9 @@ body > div {
 }
 
 body {
-  background-color: #eee;
+  background-color: white;
   color: #333;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 20px;
   font-size: 2rem;
   -webkit-font-smoothing: antialiased;
@@ -204,7 +204,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Roboto Slab', serif;
   font-weight: 600;
   line-height: 1.2;
   margin: 0 0 10px;
@@ -941,8 +941,12 @@ th:first-child {
   background-color: #fff;
   font-size: 18px;
   font-size: 1.8rem;
-  margin-bottom: 40px;
-  padding: 60px;
+  margin-bottom: 0;
+  padding: 20px;
+}
+
+.archive-description {
+  padding: 0 40px;
 }
 
 .archive-description p:last-child,
@@ -990,6 +994,12 @@ th:first-child {
 .author-box-title {
   font-size: 20px;
   font-size: 2rem;
+}
+
+.archive-title {
+  font-size: 50px;
+  font-size: 5rem;
+  margin-top: 0;
 }
 
 .entry-title {
@@ -1221,10 +1231,11 @@ img.alignright,
 }
 
 .site-title {
-  font-size: 30px;
-  font-size: 3rem;
-  font-weight: 700;
-  line-height: 1.2;
+  font-size: 50px;
+  font-size: 5rem;
+  font-weight: 400;
+  line-height: 1;
+  margin-top: 0;
 }
 
 .site-title a,
@@ -1232,6 +1243,10 @@ img.alignright,
 .site-title a:hover {
   color: #333;
   text-decoration: none;
+}
+
+.site-title a span.last-name {
+  font-weight: 700;
 }
 
 .header-image .site-title > a {
@@ -1246,7 +1261,10 @@ img.alignright,
   font-size: 16px;
   font-size: 1.6rem;
   font-weight: 400;
-  line-height: 1.5;
+  height: 1px;
+  line-height: 0;
+  left: -99999999999px;
+  position: absolute;
 }
 
 .site-description,
@@ -1287,9 +1305,11 @@ img.alignright,
 }
 
 .genesis-nav-menu a {
-  color: #333;
+  color: white;
   display: block;
-  padding: 32px 20px;
+  font-size: 20px;
+  font-size: 2rem;
+  padding: 20px 40px;
   text-decoration: none;
 }
 
@@ -1298,8 +1318,17 @@ img.alignright,
 .genesis-nav-menu .current-menu-item > a,
 .genesis-nav-menu .sub-menu .current-menu-item > a:focus,
 .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
+  color: #eee;
+  text-decoration: none;
+}
+
+.header-widget-area .genesis-nav-menu a {
+  color: #394962;
+  padding: 32px 20px;
+}
+
+.header-widget-area .genesis-nav-menu a:hover {
   color: #c3251d;
-  text-decoration: underline;
 }
 
 .genesis-nav-menu .sub-menu {
@@ -1380,8 +1409,11 @@ img.alignright,
 /* ## After Header Navigation
 --------------------------------------------- */
 .nav-primary {
-  background-color: #fff;
-  border-top: 1px solid #eee;
+  background-color: #394962;
+  color: white;
+}
+.nav-primary .genesis-nav-menu a:hover {
+  background-color: #2b3a52;
 }
 
 /* ## Footer Navigation
@@ -1396,10 +1428,14 @@ img.alignright,
 
 /* ## Entries
 --------------------------------------------- */
+body.home .post-featured-image {
+  float: right;
+}
+
 .entry {
   background-color: #fff;
   margin-bottom: 40px;
-  padding: 70px 80px;
+  padding: 30px 40px;
 }
 
 .entry-content ol,
@@ -1551,12 +1587,37 @@ p.entry-meta {
 .sidebar {
   font-size: 16px;
   font-size: 1.6rem;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .sidebar .widget {
   background-color: #fff;
-  padding: 40px;
+  padding: 0;
+}
+
+.sidebar .widget.enews-widget {
+  background-color: #394962;
+  padding: 20px;
+}
+
+.simple-social-icons ul li.ssi-facebook a {
+  background-color: #205098 !important;
+}
+
+.simple-social-icons ul li.ssi-twitter a {
+  background-color: #15A7E0 !important;
+}
+
+.simple-social-icons ul li.ssi-instagram a {
+  background-color: #F24375 !important;
+}
+
+.simple-social-icons ul li.ssi-youtube a {
+  background-color: #DF3D26 !important;
+}
+
+.simple-social-icons ul li.ssi-linkedin a {
+  background-color: #0077B5 !important;
 }
 
 /* # Footer Widgets
