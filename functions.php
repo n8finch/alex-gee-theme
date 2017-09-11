@@ -179,9 +179,13 @@ function child_header_title( $title, $inside, $wrap ) {
 add_action( 'genesis_before_entry_content', 'gee_add_featured_image' );
 
 function gee_add_featured_image() {
+
+	$is_home = is_home();
+	$is_home ? $featured_image = 'medium' : $featured_image = 'featured-image';
+
 	?>
 	<div class="post-featured-image">
-		<?php the_post_thumbnail( $post_id, 'featured-image' ); ?>
+		<?php the_post_thumbnail( $featured_image ); ?>
 	</div>
 	<?php
 }
