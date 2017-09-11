@@ -5,12 +5,17 @@ body.home .post-featured-image {
     float: right;
 }
 
+body.home .entry {
+	padding-top: 30px;
+}
 
 .entry {
 	background-color: #fff;
 	margin-bottom: 40px;
-	padding: 30px 40px;
+	padding: 0 40px 30px;
 }
+
+
 
 .entry-content ol,
 .entry-content ul {

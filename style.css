@@ -5,7 +5,7 @@
 	Author: Nate Finch
 	Author URI: http://www.n8finch.com/
 
-	Version: 1.0.0
+	Version: 1.0.1
 
 	Tags: genesis
 
@@ -832,6 +832,7 @@ th:first-child {
 /* ### Primary Sidebar */
 .sidebar-primary {
   float: right;
+  padding-top: 30px;
   width: 360px;
 }
 
@@ -1432,10 +1433,14 @@ body.home .post-featured-image {
   float: right;
 }
 
+body.home .entry {
+  padding-top: 30px;
+}
+
 .entry {
   background-color: #fff;
   margin-bottom: 40px;
-  padding: 30px 40px;
+  padding: 0 40px 30px;
 }
 
 .entry-content ol,
@@ -1652,17 +1657,27 @@ p.entry-meta {
 /* # Site Footer
 ---------------------------------------------------------------------------------------------------- */
 .site-footer {
-  background-color: #fff;
+  background-color: #394962;
   border-top: 1px solid #eee;
   font-size: 16px;
   font-size: 1.6rem;
   line-height: 1;
-  padding: 60px 0;
+  padding: 20px 0;
   text-align: center;
 }
 
 .site-footer p {
+  color: white;
   margin-bottom: 0;
+}
+
+.site-footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  color: #c3251d;
 }
 
 /* # Media Queries

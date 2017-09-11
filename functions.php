@@ -185,3 +185,10 @@ function gee_add_featured_image() {
 	</div>
 	<?php
 }
+
+//* Change the footer text
+add_filter('genesis_footer_creds_text', 'sp_footer_creds_filter');
+function sp_footer_creds_filter( $creds ) {
+	$creds = '[footer_copyright] &middot; <a href="https://alexgee.com">Alex Gee</a> &middot; Built by <a href="https://n8finch.com" title="Nate Finch">Nate Finch</a>';
+	return $creds;
+}

@@ -2,15 +2,25 @@
 ---------------------------------------------------------------------------------------------------- */
 
 .site-footer {
-	background-color: #fff;
+	background-color: $color__dark_blue;
 	border-top: 1px solid #eee;
 	font-size: 16px;
 	font-size: 1.6rem;
 	line-height: 1;
-	padding: 60px 0;
+	padding: 20px 0;
 	text-align: center;
 }
 
 .site-footer p {
+	color: white;
 	margin-bottom: 0;
+}
+
+.site-footer a {
+	color: white;
+	text-decoration: none;
+}
+
+.site-footer a:hover {
+	color: $nav__hoverColor;
 }
