@@ -1432,10 +1432,7 @@ body.home section.homepage-hero-image {
   background-size: cover;
   background-position: center;
   min-height: 75vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
+  padding: 50px;
 }
 body.home section.homepage-hero-image h2 {
   color: white;
