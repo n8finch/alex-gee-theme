@@ -1427,6 +1427,22 @@ img.alignright,
   padding: 0 20px 10px;
 }
 
+body.home section.homepage-hero-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+body.home section.homepage-hero-image h2 {
+  color: white;
+  font-size: 48px;
+  text-shadow: 2px 2px #333333;
+}
+
 /* ## Entries
 --------------------------------------------- */
 body.home .post-featured-image {

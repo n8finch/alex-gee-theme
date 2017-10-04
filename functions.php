@@ -196,3 +196,15 @@ function sp_footer_creds_filter( $creds ) {
 	$creds = '[footer_copyright] &middot; <a href="https://alexgee.com">Alex Gee</a> &middot; Built by <a href="https://n8finch.com" title="Nate Finch">Nate Finch</a>';
 	return $creds;
 }
+
+//* Add Hero to Homepage
+add_action( 'genesis_after_header', 'gee_homepage_hero', 20 );
+function gee_homepage_hero() {
+	if( is_home() || is_front_page() ) {
+	?>
+	<section class="homepage-hero-image" style="background-image: url('<?php echo get_stylesheet_directory_uri() . '/images/gee-6.jpg' ;?>');">
+		<h2>This is AlexGee.com...</h2>
+	</section>
+	<?php
+	}
+}
