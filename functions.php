@@ -168,7 +168,7 @@ function child_header_title( $title, $inside, $wrap ) {
 
 	$blog_url = get_bloginfo( 'url' );
 
-    $inside = sprintf( '<a href="' . $blog_url . '" title="%s">%s</a>', esc_attr( get_bloginfo( 'name' ) ), 'Alex <span class="last-name">Gee</span>' );
+    $inside = sprintf( '<a href="' . $blog_url . '" title="%s">%s</a>', esc_attr( get_bloginfo( 'name' ) ), 'Dr. Alex <span class="last-name">Gee</span>' );
 
     return sprintf( '<%1$s class="site-title">%2$s</%1$s>', $wrap, $inside );
 }
