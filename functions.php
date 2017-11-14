@@ -203,7 +203,7 @@ function gee_homepage_hero() {
 	if( is_home() || is_front_page() ) {
 	?>
 	<section class="homepage-hero-image" style="background-image: url('<?php echo get_stylesheet_directory_uri() . '/images/gee-6.jpg' ;?>');">
-		<h2>This is AlexGee.com...</h2>
+		<!-- <h2>This is AlexGee.com...</h2> -->
 	</section>
 	<?php
 	}
