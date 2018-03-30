@@ -36,6 +36,11 @@
 }
 
 .header-widget-area .genesis-nav-menu a {
+
+	@media (min-width: 1024px) and (max-width: 1200px) {
+		padding: 32px 9px;
+	}
+
 	color: $color__dark_blue;
 	padding: 32px 20px;
 }
@@ -62,12 +67,17 @@
 	background-color: #fff;
 	border: 1px solid #eee;
 	border-top: 0;
+	color: $color__dark_blue;
 	font-size: 14px;
 	font-size: 1.4rem;
 	padding: 20px;
 	position: relative;
 	width: 200px;
 	word-wrap: break-word;
+
+	&:hover {
+		color: white;
+	}
 }
 
 .genesis-nav-menu .sub-menu .sub-menu {

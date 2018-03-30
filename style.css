@@ -970,6 +970,7 @@ th:first-child {
 .site-header .search-form {
   float: right;
   margin: 12px auto 0;
+  width: 100%;
 }
 
 .post-password-form input[type="submit"],
@@ -1209,7 +1210,8 @@ img.alignright,
 }
 
 .site-header > .wrap {
-  padding: 20px 0;
+  padding: 20px 0 0 20px;
+  max-width: 100%;
 }
 
 /* ## Title Area
@@ -1285,6 +1287,16 @@ img.alignright,
   float: right;
   text-align: right;
   width: 800px;
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 1023px) {
+  .site-header .widget-area {
+    display: none;
+  }
+}
+.site-header .widget-area .widget.widget_nav_menu {
+  margin-bottom: 20px;
 }
 
 /* # Site Navigation
@@ -1327,6 +1339,11 @@ img.alignright,
   color: #394962;
   padding: 32px 20px;
 }
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .header-widget-area .genesis-nav-menu a {
+    padding: 32px 9px;
+  }
+}
 
 .header-widget-area .genesis-nav-menu a:hover {
   color: #c3251d;
@@ -1350,12 +1367,16 @@ img.alignright,
   background-color: #fff;
   border: 1px solid #eee;
   border-top: 0;
+  color: #394962;
   font-size: 14px;
   font-size: 1.4rem;
   padding: 20px;
   position: relative;
   width: 200px;
   word-wrap: break-word;
+}
+.genesis-nav-menu .sub-menu a:hover {
+  color: white;
 }
 
 .genesis-nav-menu .sub-menu .sub-menu {

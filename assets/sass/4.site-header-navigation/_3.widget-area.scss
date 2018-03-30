@@ -2,7 +2,20 @@
 --------------------------------------------- */
 
 .site-header .widget-area {
+
+	@media (max-width: 1023px) {
+		display: none;
+	}
+
 	float: right;
 	text-align: right;
 	width: 800px;
+	display: flex;
+    justify-content: space-around;
+
+	.widget.widget_nav_menu {
+		margin-bottom: 20px;
+	}
+
+
 }
